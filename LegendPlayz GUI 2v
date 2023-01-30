@@ -1,0 +1,207 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("L3G3ND Hub 2V", "BloodTheme")
+    -- Hubs
+    local Hubs = Window:NewTab("Hubs")
+    local HubsSection = Hubs:NewSection("Hubs")
+
+
+    HubsSection:NewButton("PIG HUB", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iPigTW/PigHub/main/pighub.lua",true))()
+    end)
+    
+    HubsSection:NewButton("GAME DESTRYOER", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/L3G3NDPL4YZ/Legend-HUUB-2v/main/Legend",true))()
+    end)
+    
+    HubsSection:NewButton("UNIVERSAL HUB", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+    end)
+    
+    HubsSection:NewButton("Syntax(KEY: Syntaxontop)", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxFE/fbbffe71caabfa5341bb0e09865c0659574978e8/GG.txt'),true))()
+    end)
+    
+    HubsSection:NewButton("Paradise HUB)", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Valenity/ParadiseHub-Open-Source/main/loader"))()
+    end)
+    
+    HubsSection:NewButton("Pendulum HUB)", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+    end)
+    
+    
+        --Admins
+    local Admins = Window:NewTab("Admins")
+    local AdminsSection = Admins:NewSection("Admins")
+
+    AdminsSection:NewButton("CMD-X", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    end)
+    
+    AdminsSection:NewButton("INFINITE YIELD", "Lets you chat for other people", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
+    
+    AdminsSection:NewButton("Reviz Admin", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://pastebin.com/RqaZUrBZ",true))()
+    end)
+    
+    
+        --Misc
+    local Misc = Window:NewTab("Misc")
+    local MiscSection = Misc:NewSection("Misc")
+
+    MiscSection:NewButton("Chat Bypass", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser",true))()
+    end) 
+    
+    MiscSection:NewButton("Aquinox HUB (LAG)", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://pastebin.com/wzB1Qh78",true))()
+    end) 
+    
+    MiscSection:NewButton("Pls steal HUB", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/PLS.STEAL.HUB/main/PLS.STEAL.HUB.txt"))()
+    end)
+    
+    MiscSection:NewButton("Login GUI", "Lets you chat for other people", function()
+        local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
+local win = DiscordLib:Window("ROBLOX")
+NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
+
+local serv = win:Server("Login", "")
+local attempts = 0
+local textbs = serv:Channel("Script")
+
+textbs:Textbox("Log-In", "Type here!", true, function(t)
+    if t:match("^%w+$") then
+        if t == "123" then
+            print("Correct password")
+            NotificationLibrary:SendNotification("Success", "Correct Password", 1)
+            wait(1)
+            game.CoreGui.Discord:Destroy()
+            NotificationLibrary:SendNotification("Info", "Loading Script.", 2)
+            wait(1)
+            --------------------PUT YOUR SCRIPT HERE LOADSTRING HERE
+        else
+            attempts = attempts + 1
+            print("Incorrect password")
+            NotificationLibrary:SendNotification("Error", "Incorrect password. You have " .. (5 - attempts) .. " attempts left.", 2) -- increase the attemps here by changing the 5 to whatever number
+            if attempts >= 5 then -- and changing the number here too
+                game.CoreGui.Discord:Destroy()
+                print("You have exceeded the maximum number of attempts. The program will now close.")
+            end
+        end
+    else
+        NotificationLibrary:SendNotification("Info", "The password can only contain letters and numbers.", 3)
+    end
+end)
+
+textbs:Label("Login to access the script. the password is 123")
+    
+    end)
+    
+    MiscSection:NewButton("Rizzler", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/rizzler",true))()
+    end)
+    
+    MiscSection:NewButton("Floating Flinger (FE)", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/fffe", true))()
+    end)    
+    
+    
+    --Scripts
+    local Scripts = Window:NewTab("Scripts")
+    local ScriptsSection = Scripts:NewSection("Scripts")
+    
+    ScriptsSection:NewButton("FE MEMEUS", "Lets you chat for other people", function()
+        loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
+    end)
+    
+    ScriptsSection:NewButton("FE VR R15 AND R6", "Lets you chat for other people", function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\104\51\78\54\82\121\68\73\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+    end)
+    
+    ScriptsSection:NewButton("FE PP", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/minecrafttotem/yzhs./main/Fe%20pp%20script%20very%20fun"))()
+    end)
+    
+    ScriptsSection:NewButton("FE SING", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://pastebin.com/G5dw48Xs",true))()
+    end)
+    
+    ScriptsSection:NewButton("FE SNAKE", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
+    end)
+    
+    ScriptsSection:NewButton("FE XESTER", "Lets you chat for other people", function()
+        --required hats
+-- total hats = 3
+-- Credits to LegendPlayz#6685
+--https://web.roblox.com/catalog/9350274205/Vans-Black-White-Checkerboard-Umbrella
+--[vans-Black-White-Checkerboard-Umbrella hat tutorial https://youtu.be/yABXDhI7XvY ]--
+
+--https://www.roblox.com/catalog/63690008/Pal-Hair
+
+--https://www.roblox.com/catalog/62234425/Brown-Hair
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/tmmiXCLT'),true))()
+    end)
+    
+    ScriptsSection:NewButton("FE FIGHTER (R15)", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"),true))()
+    end)
+    
+    
+        --Breakin
+    local Breakin = Window:NewTab("Breakin")
+    local BreakinSection = Breakin:NewSection("Breakin")
+
+    BreakinSection:NewButton("Break in Gui 1V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/XHub/main/HubLoader.lua", true))()
+    end)
+    
+    BreakinSection:NewButton("Break in Gui 2V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Levi4Chan/Rblx-Scripts/main/Break-In.lua"))()
+    end)
+    
+    BreakinSection:NewButton("Break in Gui 3V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/HHubmega/master/BreakIn", true))()
+    end)
+    
+    BreakinSection:NewButton("Break in Gui 4V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    end)
+    
+    BreakinSection:NewButton("Break in Gui 5V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RubyBoo4life/break-in-v1/main/.gitignore"))();
+    end)
+    
+    
+           --Bloxfruit
+    local Bloxfruit = Window:NewTab("Bloxfruit")
+    local BloxfruitSection = Bloxfruit:NewSection("Bloxfruit")
+
+    BloxfruitSection:NewButton("Bloxfruit Gui 1V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end)
+    
+    BloxfruitSection:NewButton("Bloxfruit Gui 2V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xSaigez/MIDNIGHT/main/MIDNIGHT"))()
+    end)
+    
+    BloxfruitSection:NewButton("Bloxfruit Gui 3V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Steveee11/Scripts/main/BloxFruits%20Cat-Core%20Hub"))()
+    end)
+    
+    BloxfruitSection:NewButton("Bloxfruit Gui 4V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
+    end)
+    
+    BloxfruitSection:NewButton("Bloxfruit Gui 5V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/xDestinyx/RipperHub/main/Loader.lua'))()
+    end)
+    
+    BloxfruitSection:NewButton("Bloxfruit Gui 6V", "Lets you chat for other people", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Steveee11/Scripts/main/BloxFruits%20Cat-Core%20Hub"))()
+    end)
+
